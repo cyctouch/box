@@ -171,11 +171,11 @@ public class App extends MultiDexApplication {
         List<String> defaultApiHistory = Hawk.get(HawkConfig.API_NAME_HISTORY, new ArrayList<>());
         defaultApiHistory.add(defaultApiName);
 
-        // 不添加默认线路
-        // putDefault(HawkConfig.API_URL, defaultApi);
-        // putDefault(HawkConfig.API_NAME, defaultApiName);
-        // putDefault(HawkConfig.API_NAME_HISTORY, defaultApiHistory);
-        // putDefault(HawkConfig.API_MAP, defaultApiMap);
+        // 添加默认线路
+        putDefault(HawkConfig.API_URL, defaultApi);
+        putDefault(HawkConfig.API_NAME, defaultApiName);
+        putDefault(HawkConfig.API_NAME_HISTORY, defaultApiHistory);
+        putDefault(HawkConfig.API_MAP, defaultApiMap);
 
         putDefault(HawkConfig.DEFAULT_STORE_API, defaultStoreApi);
         putDefault(HawkConfig.PROXY_URL_HISTORY, proxyUrlHistory);
